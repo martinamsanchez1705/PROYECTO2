@@ -272,3 +272,39 @@ main {
     padding: 20px;
     font-size: 20px;
 }
+
+/* CSS DE MAS INFO TRABAJANDO CON BOOTSTRAP */
+
+.card{
+    background-color: #ae81e981;
+    justify-content: center;
+}
+
+.card-title{
+    font-family: 'Caveat', cursive;
+    
+}
+
+.card-text{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+
+.btn {
+    font-family: 'Josefin Sans', sans-serif;
+}
+ 
+/* CONTACTO CON BOOTSTRAP */
+
+form{
+    background-color: #6766b848;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.form-control{
+    background-color: #2f2d633f;
+}
+
+#encabezado{
+        background-color: #6866b8;
+}
