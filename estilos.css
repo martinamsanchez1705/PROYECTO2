@@ -49,7 +49,6 @@ nav{
 
 .jumbotron{
     background-image:url(img/arcano.sol.png);
-    /* background-image: linear-gradient(rgb(91, 83, 160), rgb(150, 46, 119)), url(img/tarotmesacolorfuerte.jpg); */
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -67,6 +66,23 @@ h3{
     font-family: 'Caveat', cursive;
 }
 
+h4 {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 3%;
+    color: #77309a;
+}
+
+.homep {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 3%;
+    color: #100d12;
+}
+
+#botonhome{
+    padding: 20px;
+}
+
 .n-left{
     background-image: url(img/sahumerio.jpg);
     background-size: cover;
@@ -79,7 +95,68 @@ h3{
     background-color: rgba(103, 102, 184, 0.407);
 }
 
+h5{
+    background-color: #664d72;
+    color: #c6afe1ae;
+    text-align: center;
+    margin: 0%;
+}
 
+.gal article{
+    height: 250px;
+    border: 2px solid #1a193a;
+}
+
+.art1{
+    background-image: url(img/test1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.art2{
+    background-image: url(img/test2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.art3{
+    background-image: url(img/test3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.art4{
+    background-image: url(img/test4.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.art5{
+    background-image: url(img/test5.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.art6{
+    background-image: url(img/test6.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.art7{
+    background-image: url(img/test7.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.art8{
+    background-image: url(img/test8.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.art9{
+    background-image: url(img/test9.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.art10{
+    background-image: url(img/test10.jpeg);
+    background-size: cover;
+    background-position: center;
+}
 
 /* PAGINA ARCANOS INCLUYENDO GRIDS, BOOTSTRAP, @MEDIA */
 
@@ -283,6 +360,7 @@ ul a{
 }
 
 h2{
+    margin: 0;
 text-align: center;
 background-color: #6866b8;
 color:  rgb(201, 179, 153);
@@ -297,6 +375,7 @@ font-family: 'Playfair Display', serif;
     padding: 20px;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
+    margin: 0;
     }
 
 #videos{
@@ -327,11 +406,18 @@ main {
     font-size: 20px;
 }
 
-/* CSS DE MAS INFO TRABAJANDO CON BOOTSTRAP */
+/* CSS DE arcanos TRABAJANDO CON BOOTSTRAP */
+
+.fondo{
+    background-image: url(img/fondo.jpg);
+}
 
 .card{
     background-color: #ae81e981;
     justify-content: center;
+    margin: 0%;
+    margin-bottom: 0%;
+    padding: 0%;
 }
 
 .card-title{
@@ -339,7 +425,7 @@ main {
     
 }
 
-.card-text{
+.card p{
     font-family: 'Caveat', cursive;
     font-size: 20px;
 }
@@ -347,14 +433,27 @@ main {
 .btn {
     font-family: 'Josefin Sans', sans-serif;
 }
- 
+
 /* CONTACTO CON BOOTSTRAP */
-.qjumbotron{
+/* .qjumbotron{
     background-image: linear-gradient(rgb(91, 83, 160), rgb(150, 46, 119));
     width: 100%;
     height: 100px;
     border-radius: 0;
+    margin-bottom: 0;
+} */
+
+#comentario{
+    background-image: url(img/fondo.jpg);
     margin: 0;
+    padding: 0;
+}
+
+div p{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 3%;
+    color: #77309a;
 }
 
 h1{
@@ -364,12 +463,12 @@ h1{
     text-align: center;
 }
 
-.qjumbotron p{
+/* .qjumbotron p{
     color: #b8a9bc;
     text-shadow: 0 0 8px #2621c9;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
-}
+} */
 
 form{
     background-color: #6766b848;
