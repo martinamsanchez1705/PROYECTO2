@@ -28,7 +28,7 @@ font-family: 'Playfair Display', serif; */
 
 /* comienzo pagina 1 index css CON BOOTSTRAP*/
 nav{
-    background-color:  #7f52a3;
+    background-image: radial-gradient(circle, #9e1ab3, #ab2eb7, #b73eba, #c34dbf, #ce5cc3, #ca5dc5, #c65dc8, #c15eca, #a954ca, #8d4bcb, #6b45cb, #3840cb);
     font-family: 'Playfair Display', serif;
     color: #e2bdff;
     text-decoration: none;
@@ -160,7 +160,17 @@ h5{
     background-position: center;
 }
 
-/* PAGINA ARCANOS INCLUYENDO GRIDS, BOOTSTRAP, @MEDIA */
+/* PAGINA QUIEN SOY INCLUYENDO GRIDS, BOOTSTRAP, @MEDIA */
+
+h2{
+margin: 0;
+text-align: center;
+background-color: #6766b8da;
+color:  rgb(201, 179, 153);
+padding: 20px;
+font-family: 'Playfair Display', serif;
+}
+
 
 .galeria{
     width: 100%;
@@ -224,7 +234,7 @@ h5{
 }
 
 .item7 {
-    background-image: url(img/tarotdorado.jpg);
+    background-image: url(img/body.jpg);
     /*grid-column: 1/2;
     grid-row: 3/4;*/
 }
@@ -236,7 +246,7 @@ h5{
 }
 
 footer{
-    background-color: #6866b8;
+    background-image: radial-gradient(circle, #9e1ab3, #ab2eb7, #b73eba, #c34dbf, #ce5cc3, #ca5dc5, #c65dc8, #c15eca, #a954ca, #8d4bcb, #6b45cb, #3840cb);
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -321,91 +331,159 @@ footer a{
     
     
 }
-/* MAS INFO CON FLEXBOX */
+/* MAS INFO CON ANIMACION*/
+/* #mibody{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #100d12;
+} */
 
-#mitt{
-    color: #77309a;
-    text-shadow:0 0 8px #664d72;
-    font-family: 'Bebas Neue', cursive;
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url(img/holographic-7944567_1920.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: animateBg 5s linear infinite;
+}
+
+@keyframes animateBg{
+    100%{
+        filter: hue-rotate(360deg) ;
+    }
+}
+
+.login-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background-color: transparent;
+    border: 2px solid rgb(172, 172, 226);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+h6{
+    font-size: 2em;
+    color: #e4e4f8;
     text-align: center;
 }
 
-header{
+.input-box{
+    position: relative;
+    width: 310px;
+    margin: 30px;
+    border-bottom: 2px solid #fff;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color:#e4e4fe ;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color:#e4e4fe ;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icono{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.remember-forgot{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #e4e4fe;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #7f52a3;
-    color: aliceblue;
-    font-size: 20px;
-    text-shadow: 0 0 5px #000, 0 0 5px #000;
-    font-family: 'Playfair Display', serif
 }
 
-.logo{
-    font-size: 30px;
+.remember-forgot label input{
+    margin-right: 3px;
 }
 
-header span{
-    color: #dad59b;
-    text-shadow: 0 0 5px #1a193a 0, 0 5px #37193a ;
-}
-
-ul{
-    color: #f0efe3;
+.remember-forgot a {
+    color: #1a193a;
     text-decoration: none;
 }
 
-ul a{
-    color: #f5f4f0;
-    text-decoration: none;
-    display: inline-flexbox;
+.remember-forgot a:hover{
+    text-decoration: underline;
 }
 
-h2{
-    margin: 0;
-text-align: center;
-background-color: #6866b8;
-color:  rgb(201, 179, 153);
-padding: 20px;
-font-family: 'Playfair Display', serif;
-}
-
-.ttmasinfo{
-    text-align: center;
-    background-color: #6866b8;
-    color:  rgb(201, 179, 153);
-    padding: 20px;
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    margin: 0;
-    }
-
-#videos{
-    text-align: center;
-    padding: 20px;
-    margin: 0;
-    font-size: 20px;
-}
-
-
-main {
-    height: 100vh;
+#boton {
     width: 100%;
-    background-color: rgb(240, 211, 167);
-    background-image: url(img/tarotmesa.jpg);
-    background-size: cover;
+    height: 40px;
+    background-color: rgba(255, 250, 240, 0.397);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #77309a;
+    font-weight: 500;
 }
 
-.call {
-    color: #9954e7;
-    width: 60%;
-    background-color: rgba(253, 208, 166, 0.815);
-    border: 3px solid rgb(194, 136, 248);
-    font-family: 'Bebas Neue', cursive;
-    float: right;
-    margin: 30px;
-    padding: 20px;
-    font-size: 20px;
+.register-link{
+    font-size: .9em;
+    color: #e4e4fe ;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register-link p a{
+    color: #e4e4fe;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 360px) {
+    .login-box{
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+    .input-box{
+        width: 290px;
+    }
 }
 
 /* CSS DE arcanos TRABAJANDO CON BOOTSTRAP */
@@ -441,13 +519,6 @@ main {
 }
 
 /* CONTACTO CON BOOTSTRAP */
-/* .qjumbotron{
-    background-image: linear-gradient(rgb(91, 83, 160), rgb(150, 46, 119));
-    width: 100%;
-    height: 100px;
-    border-radius: 0;
-    margin-bottom: 0;
-} */
 
 #comentario{
     background-image: url(img/fondo.jpg);
